@@ -1,0 +1,2 @@
+-r qt-preview.txt
+hidapi==0.15.0

@@ -1,0 +1,352 @@
+[
+  {
+    "path": "ANTICATER_MINI_resource_res.o",
+    "size": 10616,
+    "sha256": "ea1da3e5979e69776593c6a57122f1095643e91e6445e79fccd6c4601aa7de17"
+  },
+  {
+    "path": "ANTICATER_resource_res.o",
+    "size": 10592,
+    "sha256": "6bda129c2ef4df4dc6bab19f744a55cd1c832826083b689d552158e561ed3638"
+  },
+  {
+    "path": "D3Dcompiler_47.dll",
+    "size": 3466856,
+    "sha256": "efbdbbcd0d954f8fdc53467de5d89ad525e4e4a9cfff8a15d07c6fdb350c407f"
+  },
+  {
+    "path": "dialog1.o",
+    "size": 21897,
+    "sha256": "ba41a46faf0da4b56e42ac57a6f3e910d7a414c112a09166fff2776ccc1fb91d"
+  },
+  {
+    "path": "dialog2.o",
+    "size": 62811,
+    "sha256": "20a6ea7b0779b001295a6f136fa83705e60bad90a3f4d70b80b8e7e8385887ba"
+  },
+  {
+    "path": "dialog3.o",
+    "size": 9666,
+    "sha256": "670db46be1efbc65442a3c6ba20d2b57afa97349efa9045f232a0b468de0e39f"
+  },
+  {
+    "path": "form1.o",
+    "size": 23050,
+    "sha256": "130ced18660bc4da2f41db8d7b209ad741624990986df57ffe56cd6802ff9d38"
+  },
+  {
+    "path": "hidapi.dll",
+    "size": 82944,
+    "sha256": "59d56c671887f34b8008c412243734c39a8b43c27825da2326b488c4b18be506"
+  },
+  {
+    "path": "lanague_cn.qm",
+    "size": 16,
+    "sha256": "9959b510b15d18937848ad13007e30459d2e993c67e564badbfc18f935695c85"
+  },
+  {
+    "path": "lanague_en.qm",
+    "size": 4277,
+    "sha256": "184ed56ead809228bb6cec9ed01b3d5fba2b320960f26b3c71e572d8209e37fc"
+  },
+  {
+    "path": "lanague_resource_res.o",
+    "size": 10584,
+    "sha256": "be0dd887a02e1539473b0ff0b37a2c7cdb74414186104db85afafd54b6f2d229"
+  },
+  {
+    "path": "libEGL.dll",
+    "size": 67128,
+    "sha256": "d3628f75921b9145e85442f0c77aba7e568bb6b7bd2479ad9c253654b6a6b677"
+  },
+  {
+    "path": "libgcc_s_dw2-1.dll",
+    "size": 113678,
+    "sha256": "aa8180b63a849e755323bb1abe364b654c0eed9b433738fc491e5b64c410ef76"
+  },
+  {
+    "path": "libGLESv2.dll",
+    "size": 7789416,
+    "sha256": "1d31fe6b741850f00a4b93bb21591008826f72b10063f0cf933610230524456d"
+  },
+  {
+    "path": "libstdc++-6.dll",
+    "size": 1542158,
+    "sha256": "c05b714b94bab75ddfb77339aa5f48772be7ac2c3e9d7322e2d1549fc0a39cfd"
+  },
+  {
+    "path": "libwinpthread-1.dll",
+    "size": 47104,
+    "sha256": "ae1b4fe65da58196fea59b4dc0be64ae68d6ef04497027fadbddbc2dc38d843d"
+  },
+  {
+    "path": "main.o",
+    "size": 4201,
+    "sha256": "4bdf548841859df8405cb1c24eee9faf568c31c05cc408cfa9d60ec5461db8ae"
+  },
+  {
+    "path": "Makefile",
+    "size": 30558,
+    "sha256": "47ad8cb48da61d2399acfc2a156bc536853c70a6fb97062520bde699098ac9ca"
+  },
+  {
+    "path": "Makefile.Debug",
+    "size": 113506,
+    "sha256": "265ea34b4065d1d3169a748eb10f05f9d5d6764f706a18fac9247072fea422f1"
+  },
+  {
+    "path": "Makefile.Release",
+    "size": 113774,
+    "sha256": "73d524b15f9ac7c4b46274033cf307cd2c532d4914b7376100488501b99e8546"
+  },
+  {
+    "path": "MINI_KEYBOARD_resource_res.o",
+    "size": 10608,
+    "sha256": "318175829a563e914b11358ee5e2f066792a3d15c0d03ec1fe1b79d053c1c147"
+  },
+  {
+    "path": "MINI_KEYBOARD.exe",
+    "size": 2240512,
+    "sha256": "1bdfe4afdc94367a58ab5cf69c1a4713f4da088a4084038ed5639283db074a48"
+  },
+  {
+    "path": "moc_dialog1.cpp",
+    "size": 3593,
+    "sha256": "b8db0ba7094c0290f28fecb4764b73257aa75aa11da14a1ee3f9fbf1676926f5"
+  },
+  {
+    "path": "moc_dialog1.o",
+    "size": 9113,
+    "sha256": "9f3085d9a9c14236c8d40cd08d68baf521e26cca3e330d8bb5ef92d91311c93c"
+  },
+  {
+    "path": "moc_dialog2.cpp",
+    "size": 4993,
+    "sha256": "6fba4ead9a4a9c67aff420f880db23f294a353bd5c3eea946312a89f1371827e"
+  },
+  {
+    "path": "moc_dialog2.o",
+    "size": 10744,
+    "sha256": "389407cf4b6531fcfa9ba5b9d081f39a222541e9b20f58b29420f3b12a94dce2"
+  },
+  {
+    "path": "moc_dialog3.cpp",
+    "size": 3554,
+    "sha256": "66385ba1d42afe61817099fadf18482defce02c066cedc12e7e3f07c215ebca1"
+  },
+  {
+    "path": "moc_dialog3.o",
+    "size": 9081,
+    "sha256": "7e90c5d5456847577db38f9ebcd8dac4bc8bf28858dbf5c64e1e8ca7eec48fc3"
+  },
+  {
+    "path": "moc_form0.cpp",
+    "size": 2643,
+    "sha256": "061f4153ce8b6c48e35dd2ab068e34916c9f9473235e8bf293fb63d6456dd467"
+  },
+  {
+    "path": "moc_form0.o",
+    "size": 434663,
+    "sha256": "62a2f33aba576cbcf7da5774a57d6b21254baf93b77da2ab33fbbc27de55ced3"
+  },
+  {
+    "path": "moc_form1.cpp",
+    "size": 2704,
+    "sha256": "a6ddbc39d9c26b5f7fb7a77afe015b5fbf58faa84cfa919e5a046dc00d575578"
+  },
+  {
+    "path": "moc_form1.o",
+    "size": 8036,
+    "sha256": "c0e023d3debac8c29b9c37501baee70f79baadb99565e3bcc53709a81127c564"
+  },
+  {
+    "path": "moc_formone.cpp",
+    "size": 2679,
+    "sha256": "bc110106c87c66bc7054020293c953e1e35b2e48b9279729f9e707ee4dbab981"
+  },
+  {
+    "path": "moc_formone.o",
+    "size": 434747,
+    "sha256": "bcdf1e20e6d350a8322898106e9b3223ac1488d5adba9f7114603ddcbd624898"
+  },
+  {
+    "path": "moc_predefs.h",
+    "size": 14087,
+    "sha256": "897e7425a1bd3693ed500800649187c5cbb3b12422fdec1a80a33970fff69473"
+  },
+  {
+    "path": "moc_reminderwidget.cpp",
+    "size": 3576,
+    "sha256": "3ff4fe3535313b9f7ffb1cd0170c141a7b7d99133a386a1f03eaab4404fe1f36"
+  },
+  {
+    "path": "moc_reminderwidget.o",
+    "size": 436880,
+    "sha256": "fe24132d973ea13739399305f53ddea30c5ef724b0ed62b1448a0c4b5ffdf9d4"
+  },
+  {
+    "path": "moc_thread.cpp",
+    "size": 2752,
+    "sha256": "1710b0e57ecfb344c870c7dd86c0223d92a23fc3f1230c9bf464986b1048605f"
+  },
+  {
+    "path": "moc_thread.o",
+    "size": 4245,
+    "sha256": "869614ca6fe0cd08427bc59de602220e65b19302600bf616ed4f900028fb366f"
+  },
+  {
+    "path": "moc_widget.cpp",
+    "size": 6916,
+    "sha256": "5edfcda6bac7ddbd1eca4b387bb33153df26b70b1bc323e1ce4911d1bbe91983"
+  },
+  {
+    "path": "moc_widget.o",
+    "size": 11591,
+    "sha256": "0109d042a64c87ac3c89fef8b2983bbd12f73d7f809f046777b2245ccd90930e"
+  },
+  {
+    "path": "msvcr100d.dll",
+    "size": 1467200,
+    "sha256": "5e47c4cf08450ea73d10e705fdce727ace66f8bcf4984028b1b17c91b8f630a6"
+  },
+  {
+    "path": "object_script.KEY_PRO.Debug",
+    "size": 216,
+    "sha256": "68b4c420392c82629477a67705eb807014dd2100997f95941aaa788cc4dbe3e0"
+  },
+  {
+    "path": "object_script.KEY_PRO.Release",
+    "size": 238,
+    "sha256": "5de1ebba5647a161c48f733d1d2e48144c3054dc5996bffa0f44355a094d51c9"
+  },
+  {
+    "path": "opengl32sw.dll",
+    "size": 15995904,
+    "sha256": "25ae7577e066fa80519a8f1c314b15cdd22e4a8d3ecd2a36eccc79e40714a91d"
+  },
+  {
+    "path": "qrc_image.cpp",
+    "size": 7955191,
+    "sha256": "82955c980c722115223fffe9dcfd854d12336969f6c82b56fd43dc677b34d4dc"
+  },
+  {
+    "path": "qrc_image.o",
+    "size": 1534207,
+    "sha256": "aa7ab508fbaa02c726a0c05aef317b60e542c2cc46c2026c31c7efcaec69b01d"
+  },
+  {
+    "path": "Qt5Core.dll",
+    "size": 8460552,
+    "sha256": "2af418a34f2076b05ee08dc4bedbe6eb7050bcb6b0658a3db2d5d4302af2db45"
+  },
+  {
+    "path": "Qt5Gui.dll",
+    "size": 9857512,
+    "sha256": "6431689ae70b04224017f0ca8d1ace0102ac03ca5d11aa7cdb1108c6d5ab95a8"
+  },
+  {
+    "path": "Qt5Svg.dll",
+    "size": 589544,
+    "sha256": "60bb2aa9d37684ed43a2c5ad8781c0d9af656e1ce1e867ea3a17752970803d87"
+  },
+  {
+    "path": "Qt5Widgets.dll",
+    "size": 9131304,
+    "sha256": "fa3d2383ebe612f83da59207119ea7aac8306a9fedb165457f7b9d97b875c584"
+  },
+  {
+    "path": "reminderwidget.o",
+    "size": 470964,
+    "sha256": "c7a4b66947e3f3ac44bbb836fa1202c25cf8dae895ba23d5702716d8f88b1b9d"
+  },
+  {
+    "path": "tabwidget.o",
+    "size": 18211,
+    "sha256": "1d8e74b45c7b947dbe62fef5bff590e9771b72e61cc9fdbcac13d14f21fb896d"
+  },
+  {
+    "path": "thread.o",
+    "size": 1494,
+    "sha256": "0d39fc5a7f6b032ac7558e881cc36cf6ec18aac2f34c31665e31e167b6510b53"
+  },
+  {
+    "path": "widget.o",
+    "size": 774689,
+    "sha256": "ce0ca43254f61098ce56524c08c7eb48a30e05c7f18a58291cee7019b6be4643"
+  },
+  {
+    "path": "imageformats/qgif.dll",
+    "size": 77288,
+    "sha256": "3ae1828d03e788b310afb96550dd662f00d41fdb34aa3a6586ad4b7b4f362e7f"
+  },
+  {
+    "path": "imageformats/qicns.dll",
+    "size": 97936,
+    "sha256": "d974a1766ae3f35b82e03ca6b3d0c444210ca7dee863f9b9f1e86bf9a9a8f638"
+  },
+  {
+    "path": "imageformats/qico.dll",
+    "size": 84424,
+    "sha256": "d9d1afcb36f8c48fca4cababc3424e47d3eb0ea8665aeecd9166ca21579d31a0"
+  },
+  {
+    "path": "imageformats/qjpeg.dll",
+    "size": 483424,
+    "sha256": "deef3d1efbd5361e335a766625b25bf00b6ee4b7f8e96e06404ace40c160e808"
+  },
+  {
+    "path": "imageformats/qsvg.dll",
+    "size": 74248,
+    "sha256": "a351d313819ae29d19dc1edd07f2a4add27dcbb7258117ba0af50724b5032380"
+  },
+  {
+    "path": "imageformats/qtga.dll",
+    "size": 70032,
+    "sha256": "cb69b3a10fdb7db8ed8641eba769e3619966d39c9b8c7515573558efaaa1621d"
+  },
+  {
+    "path": "imageformats/qtiff.dll",
+    "size": 556032,
+    "sha256": "b84e078e683e4a72d4eafdd2c7ea44a4f4ad92045d42d499c44ef02fef8d0de8"
+  },
+  {
+    "path": "imageformats/qwbmp.dll",
+    "size": 68688,
+    "sha256": "6c706a7a62b0f160c0d847d2244d09784fe8c8165c2aa1dd8bbea1d1af9dd3e7"
+  },
+  {
+    "path": "imageformats/qwebp.dll",
+    "size": 574376,
+    "sha256": "dd6ca5197f1653dd39fb189e9a7d5fa7137230d3585fce8021b9ada45bc1d0c8"
+  },
+  {
+    "path": "styles/qwindowsvistastyle.dll",
+    "size": 335832,
+    "sha256": "56a0c8194da0fa0dde3fde29488d7296cd2df58e83c0af5ea1d1b98207eab650"
+  },
+  {
+    "path": "platforms/qdirect2d.dll",
+    "size": 3101960,
+    "sha256": "21cc3f5d4e901b7ef2aab2a9367c5be325fa2bec63b730d842a42a9aadc8602e"
+  },
+  {
+    "path": "platforms/qminimal.dll",
+    "size": 1355400,
+    "sha256": "93ea1bc92cbb0b97a3e63ea73263789e28b9a99a53bf189f232b5c139d10cbb0"
+  },
+  {
+    "path": "platforms/qoffscreen.dll",
+    "size": 1142288,
+    "sha256": "417982be7fcfcaafc4ce97057d1106de17e71909d57cfda278280d98fef0261d"
+  },
+  {
+    "path": "platforms/qwebgl.dll",
+    "size": 1048864,
+    "sha256": "e21f7825bd21464bf88262bf6b037df5ceb01e886cbbb9a5d73be6a56126258d"
+  },
+  {
+    "path": "platforms/qwindows.dll",
+    "size": 2963120,
+    "sha256": "f33e37284ce425531cff7ad6d951bfc3b2dc37e238075796f0b7077518024c03"
+  }
+]

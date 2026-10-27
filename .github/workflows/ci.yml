@@ -1,0 +1,40 @@
+name: Verificações
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  linux:
+    name: Protocolo e domínio · Linux
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Executar suíte de testes unitários e vetores reais
+        working-directory: novo
+        run: /usr/bin/python3 -m unittest discover -s tests -v
+
+  windows:
+    name: Protocolo e domínio · Windows
+    runs-on: windows-latest
+    timeout-minutes: 10
+    env:
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          architecture: x64
+      - name: Executar suíte de testes unitários no Windows
+        working-directory: novo
+        run: python -m unittest discover -s tests -v

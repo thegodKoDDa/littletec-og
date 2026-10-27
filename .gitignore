@@ -1,0 +1,37 @@
+# Distribuição original preservada localmente; hashes em novo/docs/original-manifest.json
+/original/
+
+# Notas internas e histórico local de investigação
+/RETOMAR.md
+/AGENTS.md
+/novo/docs/RETOMADA_WSL.md
+/novo/docs/CONTINUAR.md
+/novo/docs/historico/
+/novo/docs/refatoracao/
+/novo/tools/historico/
+
+# Interface Tkinter legada (substituída pelo Studio Qt em ui_qt/)
+/novo/src/desktop.py
+/novo/src/littletec/app.py
+/novo/src/littletec/board.py
+/novo/src/littletec/lighting_dialog.py
+/novo/src/littletec/theme.py
+
+# Evidências, capturas e ambientes locais
+/novo/analysis/
+/novo/captures/
+/novo/dist/
+/novo/build/
+/novo/.devtools/
+/novo/.venv*/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.qmlc
+*.jsc
+.pytest_cache/
+.ruff_cache/
+*.log
+*.zip
+*:Zone.Identifier

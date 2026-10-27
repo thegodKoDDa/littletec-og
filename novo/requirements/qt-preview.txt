@@ -1,0 +1,4 @@
+# Base selecionada em 27/10/2026; requer Python >=3.10,<3.16.
+# Qt Quick/Controls sem instalar os módulos WebEngine/PDF do metapacote.
+PySide6-Essentials==6.12.0
+PySide6-Addons==6.12.0
