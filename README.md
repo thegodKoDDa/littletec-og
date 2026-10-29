@@ -2,10 +2,15 @@
 
 Seu teclado macro 12+2, do seu jeito. Configurador próprio em português para Windows x64, com reconhecimento direto de teclas, presets para os 2 knobs giratórios, ações rápidas de mídia e controle de iluminação LED.
 
-**[Baixar LittleTec-Windows-x64.zip — Windows 64 bits](https://github.com/thegodKoDDa/littletec/releases/latest/download/LittleTec-Windows-x64.zip)** · [Todas as versões](https://github.com/thegodKoDDa/littletec/releases) · [Licença ISC](LICENSE)
+**[Baixar LittleTec-Windows-x64.zip — Windows 64 bits](https://github.com/thegodKoDDa/littletec/releases/latest/download/LittleTec-Windows-x64.zip)** · **[Versão Web & Online (GitHub Pages)](https://github.com/thegodKoDDa/littletec-web)** · [Todas as versões](https://github.com/thegodKoDDa/littletec/releases) · [Licença ISC](LICENSE)
 
 [![Verificações](https://github.com/thegodKoDDa/littletec/actions/workflows/ci.yml/badge.svg)](https://github.com/thegodKoDDa/littletec/actions/workflows/ci.yml)
 [![Licença ISC](https://img.shields.io/badge/licen%C3%A7a-ISC-blue.svg)](LICENSE)
+
+> [!NOTE]
+> **Versão Web disponível & Aviso sobre a interface:**
+> - Uma versão web moderna, responsiva e com feedback em tempo real está disponível no projeto **[LittleTec Web](https://github.com/thegodKoDDa/littletec-web)**, podendo ser usada diretamente no navegador pelo **[GitHub Pages](https://thegodkodda.github.io/littletec-web/)** ou baixada em pacote HTML portátil.
+> - **Aviso de desenvolvimento:** A interface visual atual em PySide6/QML deste aplicativo desktop está plenamente funcional e estável, mas está sujeita a alterações futuras planejadas, com a futura migração e unificação definitiva para o design system da versão Web.
 
 ## Teclado de referência compatível
 
