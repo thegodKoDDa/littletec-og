@@ -10,6 +10,32 @@ que reúne Web e o novo Desktop com interface compartilhada.
 **[Web do Studio](https://thegodkodda.github.io/littletecstudio/)** ·
 [Licença ISC](LICENSE)
 
+## Produto de referência e identificação USB
+
+**[Mini Teclado Mecânico Programável — 12 teclas + 2 knobs, RGB e USB Type-C (AliExpress, item 1005006437127027)](https://pt.aliexpress.com/item/1005006437127027.html)**
+
+Esse é o produto de referência utilizado no projeto. O suporte USB é específico
+para a variante observada **12+2, variante 0**; semelhança visual ou o mesmo
+VID/PID em outro aparelho não garante compatibilidade.
+
+| Característica | Referência do projeto |
+| --- | --- |
+| Controlador | WCH CH57x |
+| USB VID:PID | **`1189:8842`** (`0x1189:0x8842`, `VID_1189&PID_8842`) |
+| Interface de configuração | `MI_00`, HID de fornecedor, Usage Page `0xFF00`, Usage `0x01` |
+| Relatórios de configuração | 65 bytes, Report ID `0x03` |
+| Camadas | Três camadas independentes |
+| Teclas | 12 teclas mecânicas, `Tecla 01` a `Tecla 12` |
+| Giratórios | Dois knobs; esquerda, clique e direita independentes em cada um |
+| Posições configuráveis | 18 por camada, 54 nas três camadas |
+| Iluminação | Sete cores nativas: vermelho, laranja, amarelo, verde, ciano, azul e roxo |
+| Modos LED | Desligado, estático, respiração, ciclo automático, onda ao pressionar e acender tecla ao pressionar |
+
+No Studio, a entrada ao vivo usa a interface `MI_01` por Windows Raw Input;
+a configuração usa HIDAPI na `MI_00`. O OG preserva sua interface Qt, sem o
+monitor ao vivo do Studio. LED não tem readback conhecido: prévia e último
+comando enviado não representam leitura do estado interno.
+
 ## O que fica preservado
 
 - Nosso primeiro desktop: Python + PySide6/Qt Quick/QML + HIDAPI, Windows x64.
