@@ -5,6 +5,8 @@ em uso real**, mapeando, trocando cores e aplicando mudanças. Confirmação do
 usuário, com destaque para o Web. Integração USB e escrita dos giratórios estão
 concluídas; não reiniciar esses trabalhos a partir de relatos antigos.
 
+[Encerramento de 29/10/2026](novo/docs/ENCERRAMENTO_20261029.md): conferência final concluída; nenhuma alteração de produto em andamento.
+
 ## Leitura de retomada
 
 1. [Orientações do projeto](AGENTS.md).

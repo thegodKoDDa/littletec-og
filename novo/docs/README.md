@@ -1,5 +1,7 @@
 # Documentação do LittleTec
 
+[Encerramento de 29/10/2026](ENCERRAMENTO_20261029.md): resultados finais e ponto de retomada.
+
 Atualizada em **29/10/2026**. Os documentos vigentes descrevem o produto funcional.
 Relatos de etapas anteriores não representam pendências atuais de integração.
 
