@@ -1,5 +1,10 @@
 # Endereçamento de giratórios na integração Qt
 
+> **Resultado técnico histórico de 27/10/2026.** A escrita foi resolvida e integrada.
+> Desktop e Web funcionam em uso real, conforme confirmação de 29/10/2026.
+> Os limites de eventos físicos citados abaixo são os daquele ensaio específico.
+> Estado vigente em [ESTADO_ATUAL.md](ESTADO_ATUAL.md).
+
 O pedido atual exige concluir a escrita dos giratórios, sem repetir pesquisas ou
 ensaios de cores. A questão específica pendente é a relação entre slot de escrita
 FD e ID de resposta FA. A leitura já normaliza trios 16↔18 e 19↔21 para reproduzir

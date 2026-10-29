@@ -1,5 +1,10 @@
 # LittleTec Studio 1.1
 
+> **Estado confirmado em 29/10/2026:** desktop 1.1.0 e Web 0.2.0 funcionam em uso
+> real para mapeamento, troca de cores e aplicação de mudanças, conforme o usuário.
+> USB no Web usa a ponte local Windows; Pages/HTML estático oferecem o editor.
+> [Estado atual](docs/ESTADO_ATUAL.md) · [Documentação](docs/README.md).
+
 Interface Qt própria em português para configurar o teclado mecânico **12 teclas + 2 knobs giratórios (`1189:8842`)**, utilizando o firmware nativo do controlador WCH CH57x.
 
 - **Modelo de referência**: [Mini Teclado Mecânico Programável 12 Teclas + 2 Knobs RGB (AliExpress)](https://pt.aliexpress.com/item/1005006437127027.html)

@@ -1,0 +1,257 @@
+{
+  "schema": 1,
+  "date": "2026-10-29",
+  "purpose": "Inventário de 30 funções de configuração implementadas no Studio Qt; paridade Web em seu repositório.",
+  "target": "Windows x64 / 1189:8842 / 12 teclas + 2 encoders / variante 0",
+  "status_note": "Studio desktop 1.1.0 e Web 0.2.0 funcionais para mapeamento, cores e aplicação, conforme confirmação do usuário em 29/10/2026. Estado em ../ESTADO_ATUAL.md; laudos antigos mantêm seu alcance específico.",
+  "features": [
+    {
+      "id": "layers",
+      "name": "Três camadas independentes",
+      "origin": "ambos",
+      "current": "implementado",
+      "target": "Seletor persistente acima do aparelho",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "board",
+      "name": "12 teclas com seleção e rótulos",
+      "origin": "ambos",
+      "current": "implementado",
+      "target": "Placa visual 4×3 com foco e mudanças marcadas",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "encoders",
+      "name": "Dois giratórios: esquerda, clique e direita",
+      "origin": "ambos",
+      "current": "edição e escrita/releitura dos slots 16–21 integradas; IDs armazenados tratados; uso confirmado; eventos ao vivo Web documentados separadamente",
+      "target": "Seis alvos acessíveis com escrita integrada, presets e edição",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "keys",
+      "name": "Letras, números, navegação e numérico",
+      "origin": "ambos",
+      "current": "implementado",
+      "target": "Catálogo pesquisável e teclado visual opcional",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "function_keys",
+      "name": "F1–F24",
+      "origin": "ambos",
+      "current": "implementado",
+      "target": "Catálogo e editor de atalho",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "modifiers",
+      "name": "Ctrl, Shift, Alt, Win dos dois lados",
+      "origin": "ambos",
+      "current": "implementado",
+      "target": "Controles da etapa e ação de modificador isolado",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "symbols",
+      "name": "Símbolos e combinações rápidas",
+      "origin": "ambos",
+      "current": "implementado em posições US",
+      "target": "Categoria Atalhos/símbolos, com indicação de layout",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "mac_aliases",
+      "name": "Aliases command, option e control",
+      "origin": "ambos",
+      "current": "aliases locais",
+      "target": "Nomes alternativos no editor; não alegar execução macOS testada",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "sequence",
+      "name": "Sequências por posição",
+      "origin": "ambos",
+      "current": "até 20 pares no registro",
+      "target": "Lista editável, contagem e limite visíveis",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "sequence_edit",
+      "name": "Adicionar, remover e reordenar etapas",
+      "origin": "novo",
+      "current": "implementado",
+      "target": "Editor de sequência com seleção e mover acima/abaixo",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "media",
+      "name": "21 ações multimídia",
+      "origin": "ambos",
+      "current": "codificação confrontada; efeitos individuais não ensaiados",
+      "target": "Categoria Multimídia com busca",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "mouse",
+      "name": "11 ações de mouse e roda",
+      "origin": "ambos",
+      "current": "codificação confrontada; efeitos individuais não ensaiados",
+      "target": "Categoria Mouse com modificadores",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "delay",
+      "name": "Atraso de 0 a 6000 ms",
+      "origin": "ambos",
+      "current": "ação própria codificada",
+      "target": "Controle numérico com unidade e ação explícita",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "led_palette",
+      "name": "Sete cores de iluminação",
+      "origin": "ambos",
+      "current": "troca de cores funcional no desktop e Web local, confirmada pelo usuário",
+      "target": "Paleta direta; sem repetir ensaios de cores",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "led_modes",
+      "name": "Seis modos LED",
+      "origin": "ambos",
+      "current": "seis modos implementados; troca de cores confirmada em uso, sem laudo específico de cada efeito",
+      "target": "Seletor dos seis modos do catálogo",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "led_layers",
+      "name": "Iluminação por camada",
+      "origin": "ambos",
+      "current": "envio direto nas camadas 1–3 com cópia/releitura; uso de cores e aplicação confirmado sem especificar ensaio individual de cada camada",
+      "target": "Controle por camada e envio nas três, sem recibo experimental",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "read",
+      "name": "Ler configuração do aparelho",
+      "origin": "ambos",
+      "current": "USB real Windows",
+      "target": "Conexão/atualização em segundo plano e rascunho preservado",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "apply",
+      "name": "Aplicar configuração",
+      "origin": "ambos",
+      "current": "teclas 1–12 e giratórios 16–21 com releitura e tentativa de retorno; aplicação confirmada em uso",
+      "target": "Aplicação com progresso e revisão contextual",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "clear_position",
+      "name": "Limpar posição",
+      "origin": "ambos",
+      "current": "local e reversível",
+      "target": "Comando do editor, envio somente ao aplicar",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "clear_scope",
+      "name": "Limpar camada ou tudo",
+      "origin": "ambos",
+      "current": "local e reversível",
+      "target": "Menu com escopo explícito e undo",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "profile_files",
+      "name": "Novo, abrir, salvar e salvar como",
+      "origin": "novo",
+      "current": "JSON v2 e migração v1",
+      "target": "Área Perfis e atalhos de arquivo",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "profile_models",
+      "name": "24 modelos de rascunho e personalizado",
+      "origin": "ambos",
+      "current": "edição local; USB restrito ao modelo real",
+      "target": "Opção avançada de perfil, separada da identificação do aparelho",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "history",
+      "name": "Desfazer/refazer",
+      "origin": "novo",
+      "current": "implementado",
+      "target": "Histórico de edição independente da GUI",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "backup",
+      "name": "Cópias brutas e importação com hash",
+      "origin": "novo",
+      "current": "72 relatórios; LED não incluído",
+      "target": "Cópia automática e comando de importar/recuperar em perfis",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "diff",
+      "name": "Revisão e exportação de alterações",
+      "origin": "novo",
+      "current": "implementado",
+      "target": "Resumo discreto e detalhe expansível",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "raw",
+      "name": "Preservar dados desconhecidos",
+      "origin": "novo",
+      "current": "registros raw preservados",
+      "target": "Ação não interpretada visível sem conversão destrutiva",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "diagnostics",
+      "name": "Diagnóstico e exportação",
+      "origin": "novo",
+      "current": "PnP Windows e sysfs WSL",
+      "target": "Área secundária com mensagem curta e detalhes sob demanda",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "connection_errors",
+      "name": "Conexão, timeout e falhas de envio",
+      "origin": "novo",
+      "current": "implementado nos serviços",
+      "target": "Estados assíncronos consistentes; erros reais sem sucesso falso",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "theme",
+      "name": "Tema claro/escuro e redimensionamento",
+      "origin": "reformulação",
+      "current": "Qt com componentes, temas e rolagem; smoke em 1040x720 e 1280x840",
+      "target": "Componentes reutilizáveis com foco, contraste e DPI",
+      "qt": "acessível e integrado"
+    },
+    {
+      "id": "normal_led_flow",
+      "name": "Aplicação direta de iluminação",
+      "origin": "pedido atual",
+      "current": "envio direto Qt e Web local sem recibo/ensaio/confirmação visual no uso cotidiano; último envio separado de readback",
+      "target": "Manter aplicação direta e indicação correta do último envio",
+      "qt": "acessível e integrado"
+    }
+  ],
+  "excluded_from_normal_configuration": [
+    "Atualização de firmware EF",
+    "Reprogramação de variante FC",
+    "Troca de driver",
+    "RGB arbitrário ou por tecla não exposto pelo protocolo local",
+    "Suporte USB a outros modelos apenas porque existem no catálogo de rascunhos",
+    "Automação residente de scripts sem implementação específica"
+  ]
+}

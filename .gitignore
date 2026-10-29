@@ -1,13 +1,13 @@
 # Distribuição original preservada localmente; hashes em novo/docs/original-manifest.json
 /original/
 
-# Notas internas e histórico local de investigação
-/RETOMAR.md
-/AGENTS.md
-/novo/docs/RETOMADA_WSL.md
-/novo/docs/CONTINUAR.md
+# Histórico e investigação locais; documentação vigente acompanha o repositório
 /novo/docs/historico/
-/novo/docs/refatoracao/
+/novo/docs/refatoracao/*
+!/novo/docs/refatoracao/ARQUITETURA.md
+!/novo/docs/refatoracao/INTERFACE.md
+!/novo/docs/refatoracao/PLANO.md
+!/novo/docs/refatoracao/FUNCIONALIDADES.json
 /novo/tools/historico/
 
 # Interface Tkinter legada (substituída pelo Studio Qt em ui_qt/)

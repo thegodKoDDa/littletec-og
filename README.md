@@ -1,5 +1,10 @@
 # LittleTec Studio
 
+> **Estado confirmado em 29/10/2026:** desktop 1.1.0 e Web 0.2.0 funcionam em uso
+> real para mapeamento, troca de cores e aplicação de mudanças, conforme o usuário.
+> USB no Web usa a ponte local Windows; Pages/HTML estático oferecem o editor.
+> [Estado atual](novo/docs/ESTADO_ATUAL.md) · [Documentação](novo/docs/README.md).
+
 Seu teclado macro 12+2, do seu jeito. Configurador próprio em português para Windows x64, com reconhecimento direto de teclas, presets para os 2 knobs giratórios, ações rápidas de mídia e controle de iluminação LED.
 
 **[Baixar LittleTec-Windows-x64.zip — Windows 64 bits](https://github.com/thegodKoDDa/littletec/releases/latest/download/LittleTec-Windows-x64.zip)** · **[Versão Web & Online (GitHub Pages)](https://github.com/thegodKoDDa/littletec-web)** · [Todas as versões](https://github.com/thegodKoDDa/littletec/releases) · [Licença ISC](LICENSE)

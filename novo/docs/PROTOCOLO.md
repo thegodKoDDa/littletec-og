@@ -1,5 +1,11 @@
 # Protocolo recuperado — LittleTec 12+2
 
+Atualizado em **29/10/2026**. Desktop 1.1.0 e Web 0.2.0 funcionam em uso real
+para mapeamento, cores e aplicação, conforme o usuário. Estado consolidado em
+[ESTADO_ATUAL.md](ESTADO_ATUAL.md). Este texto descreve o fluxo atual; o texto
+anterior permanece no [histórico do repositório](https://github.com/thegodKoDDa/littletec/blob/eaa6f36990f440b6cc551a23bf0e3f7f8f4f38ca/novo/docs/PROTOCOLO.md)
+e no arquivo local `historico/PROTOCOLO_ATE_20261028.md`.
+
 ## Atualização da integração Qt — IDs armazenados de giratórios
 
 Escrita dos slots 16..21 foi verificada no aparelho, com retorno das ações após
@@ -21,12 +27,12 @@ releitura e inversos. Recibos/ensaios deixaram de ser requisito de UX; comandos
 FC/EF/LED arbitrários e registros opacos continuam fora desse transporte.
 LED tem serviço separado e envio direto, sem afirmar readback/estado visual.
 
-Os detalhes posteriores de bloqueio de encoder/recibos descrevem o histórico 0.4.
+Recibos e bloqueios da versão 0.4 permanecem documentados apenas no histórico.
 
 Estado: identificação e leitura real validadas; codificador confrontado com o
 editor original; teste físico A → F24 → A aprovado pelo usuário e concluído.
 Atualização LED: ciano → vermelho → ciano estáticos na camada 1 concluídos com
-aprovação específica e confirmações visuais humanas; veja `LED_INVESTIGACAO.md`.
+aprovação específica e confirmações visuais humanas; veja `historico/LED_INVESTIGACAO.md`.
 Modelo: 1189:8842, MI_00, usage page FF00/usage 1, report ID 03, relatórios de
 65 bytes (ID + 64 dados). Não é firmware nem imagem de memória do microcontrolador.
 
@@ -116,12 +122,13 @@ de edição. Assim, o registro recebido com ID 18 alimenta o slot editável 16.
 O decodificador usa uma transformação explícita por trio (16↔18, 19↔21, 22↔24),
 não a ordem ocasional de chegada. As respostas brutas são preservadas intactas.
 A transformação foi confrontada com os 72 registros na memória do original e
-com a seleção das posições. A leitura atual mostra encoder 1 como volume−,
-silenciar, volume+; encoder 2 como 4,5,6.
+com a seleção das posições. Naquele confronto, encoder 1 era volume−,
+silenciar, volume+; encoder 2 como 4,5,6. Esses valores são históricos, não uma
+afirmação da configuração presente do usuário.
 
-**A gravação de encoders não foi testada no aparelho.** Ela permanece recusada no
-transporte, mesmo com o formato do editor recuperado, para não confundir equivalência
-com o programa antigo com validação física da numeração de escrita.
+A escrita dos seis slots 16–21 foi resolvida e verificada por escrita/releitura
+e retorno das ações. `ConfigurationService` integra esse caminho ao desktop e
+à ponte Web. A antiga recusa do transporte 0.4 não se aplica ao fluxo atual.
 
 ## Iluminação
 
@@ -130,10 +137,10 @@ Registro `FE B0 camada 08`, contagem 1. Offset 11 contém a cor no nibble alto
 Os 13 controles e um pacote nativo foram confrontados. Isso recupera a codificação,
 não o estado atual do aparelho: o fluxo FA observado não retorna esse registro.
 
-Perfis lidos pelo USB usam `{mode: null, color: null}`. A interface mostra estado
-não lido e não inventa uma cor. Na versão 0.4, a seleção pode partir da última
-referência visual confirmada, explicitamente identificada como tal na interface;
-a cópia bruta e o decodificador continuam sem valor LED inventado.
+O decodificador de perfis lidos pelo USB usa `{mode: null, color: null}`.
+A interface pode oferecer uma seleção local ou usar o último envio conhecido;
+nenhuma dessas opções representa LED lido. Referências visuais e recibos da
+versão 0.4 pertencem ao fluxo histórico. A cópia bruta não contém estado LED.
 
 O usuário autorizou posteriormente estabelecer ciano estático sem readback do
 LED anterior na camada 1, testar vermelho e voltar ao ciano. Foram enviados FE B0
@@ -143,12 +150,14 @@ As três aparências foram confirmadas pelo usuário; os 72 relatórios completo
 de teclas/encoders coincidiram antes/depois. Isso valida retorno à referência
 estabelecida, sem comprovar recuperação do estado LED interno anterior desconhecido.
 
-Envio normal LED é separado de FD de teclas e exige recibo específico por
-identidade/caminho/camada. Antes/depois são confirmados visualmente; falha tenta
-enviar o pacote inverso. Interrupção/retorno não confirmado invalida a referência.
-Sem detecção automática de mudanças externas: o usuário deve cancelar se a
-referência exibida não corresponder ao teclado. Ainda não há persistência após
-reconexão validada; efeitos individuais fora do estático seguem sem ensaio físico.
+O envio normal LED é separado de FD de teclas. Desktop e ponte Web usam
+`ConfigurationService.apply_led` / `apply_led_all_layers`: cópia recente,
+identidade/caminho/capacidades validados, envio canônico e releitura das ações.
+O uso atual não exige recibo experimental nem confirmação visual a cada envio.
+O último comando enviado é guardado separadamente do estado interno desconhecido.
+Em falha, o resultado deve indicar incerteza; um reenvio anterior conhecido não
+constitui readback nem prova visual. A ponte Web invalida referências das camadas
+afetadas em falha. O usuário confirmou troca de cores e aplicação nas duas interfaces.
 
 ## Pacotes de gravação e retorno
 
@@ -175,30 +184,37 @@ Resultado `captures/write-restore-trial.json`: noop_verified, change_verified,
 restoration_verified e complete todos true. Sem erros. Recibo local em
 `%LOCALAPPDATA%\LittleTec\write-validation.json`, associado ao caminho HID e identidade.
 O mesmo ensaio aprovado foi repetido pela integração da interface e também terminou
-com os 72 relatórios idênticos ao início. O estado final da tecla é A.
+com os 72 relatórios idênticos ao início. O estado da tecla ao fim daquele ensaio era A; isso não descreve o mapeamento atual.
 
-A validação física cobre esse ensaio de teclado comum. Não foram testados um
-pressionamento físico de F24, sua persistência após reconectar, escrita em encoder
-ou LED, nem todos os efeitos de cada código multimídia/mouse no sistema operacional.
+Esse laudo cobre o ensaio A/F24 da época, sem pressionamento físico ou persistência
+específica de F24 após reconectar. Ensaios posteriores de encoder/LED e uso normal
+confirmado estão registrados separadamente; não alteram retroativamente seu alcance.
 Não chamar a cópia dos 72 relatórios de imagem completa de memória/firmware.
 
-## Fluxo de aplicação do Studio
+## Fluxo atual de aplicação
 
-- Ler teclado: identifica, lê, guarda cópia bruta e decodifica para o editor.
-- Editar e revisar: mostra antes/depois e permite exportar o plano.
-- Aplicar teclas: exige o recibo de restauração deste dispositivo; uma nova leitura
-  com cópia deve coincidir com a origem carregada, evitando sobrescrever mudanças
-  externas ou uma cópia antiga. Envia apenas posições 1–12 e camadas 1–3, nos tipos
-  codificados conhecidos, com tamanho completo e finalização por camada.
-- Relê o aparelho: compara semanticamente as ações alteradas e byte a byte os
-  registros não alterados. Em falha, tenta enviar os pacotes inversos e comprovar
-  o retorno integral. Se o retorno falhar (por exemplo desconexão), invalida o
-  recibo e informa a cópia anterior; não promete restauração sem acesso ao aparelho.
+- **Ler:** identifica o 12+2/variante 0, lê as três camadas, guarda dados brutos
+  com hashes e decodifica uma cópia para o editor.
+- **Editar/revisar:** ações e diferenças permanecem locais até aplicar. Perfis
+  opacos e reservados não são convertidos destrutivamente.
+- **Aplicar mapeamento:** `ConfigurationService.apply_keys` faz nova cópia e
+  exige que a origem coincida com o snapshot carregado. Envia FD somente para
+  posições físicas 1–12/16–21, com finalização por camada.
+- **Conferir:** relê, compara semanticamente ações alteradas e confere registros
+  não alterados. Em falha, tenta inversos e releitura. Sem acesso ao dispositivo,
+  não promete retorno; cópias e journal permanecem disponíveis.
+- **Aplicar LED:** caminho FE B0 separado, como descrito acima.
 
-FD é o único tipo de escrita aceito no transporte de teclas e seu índice é limitado a teclas comuns.
-Atualização/flash, FE de LED, FC, encoders e pedidos arbitrários não são aceitos
-pelo transporte de teclas. `lighting_service` admite exclusivamente LED FE B0
-canônico + finalização fixa, conforme os limites e validação visual acima.
-Consultas FB/FA, escrita FD e LED têm funções e listas separadas.
-O usuário só inicia aplicação pelo botão da revisão; abrir o aplicativo faz apenas
-enumeração de presença, sem carregar ou gravar configuração automaticamente.
+O desktop executa I/O em worker Qt. A ponte Web serializa operações e exige revisão
+de snapshot entre abas; falhas de aplicação invalidam a leitura da ponte até nova
+conexão. O launcher desktop normal lê automaticamente; o Web lê ao conectar.
+Inicializar a ponte, por si só, não envia configuração.
+
+O monitor Web usa Raw Input da MI_01 sem consumir as respostas de configuração da
+MI_00. O fluxo de entrada não informa diretamente posição, camada ativa ou ângulo;
+a associação é feita com o mapeamento lido, preservando ambiguidades.
+
+`write_service.apply_profile`, `TrialBackend` e os recibos antigos permanecem
+como implementação legada. Não usar suas restrições de teclas 1–12 como descrição
+do produto Qt/Web atual. FC/EF, firmware, troca de driver e pacotes arbitrários
+continuam fora do configurador normal.
