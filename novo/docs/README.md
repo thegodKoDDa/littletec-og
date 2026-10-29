@@ -1,3 +1,9 @@
+> **Arquivo LittleTec OG (29/10/2026):** desenvolvimento encerrado. Conteúdo
+> preservado para uso/consulta do Qt 1.1.0. O trabalho ativo segue no
+> [LittleTec Studio](https://github.com/thegodKoDDa/littletecstudio).
+> A antiga cópia Web local está no histórico do Studio; caminhos antigos abaixo
+> descrevem a organização anterior.
+
 # Documentação do LittleTec
 
 [Encerramento de 29/10/2026](ENCERRAMENTO_20261029.md): resultados finais e ponto de retomada.

@@ -1,101 +1,68 @@
-# LittleTec Studio
+# LittleTec OG — desktop preservado
 
-> **Estado confirmado em 29/10/2026:** desktop 1.1.0 e Web 0.2.0 funcionam em uso
-> real para mapeamento, troca de cores e aplicação de mudanças, conforme o usuário.
-> USB no Web usa a ponte local Windows; Pages/HTML estático oferecem o editor.
-> [Estado atual](novo/docs/ESTADO_ATUAL.md) · [Documentação](novo/docs/README.md).
+**Desenvolvimento encerrado em 29/10/2026. Este projeto não receberá novas
+funcionalidades ou correções.** O aplicativo Qt 1.1.0 continua preservado e
+funcional; todo o trabalho futuro está no **[LittleTec Studio](https://github.com/thegodKoDDa/littletecstudio)**,
+que reúne Web e o novo Desktop com interface compartilhada.
 
-Seu teclado macro 12+2, do seu jeito. Configurador próprio em português para Windows x64, com reconhecimento direto de teclas, presets para os 2 knobs giratórios, ações rápidas de mídia e controle de iluminação LED.
+**[Baixar desktop OG 1.1.0](https://github.com/thegodKoDDa/littletec-og/releases/download/v1.1.0/LittleTec-Windows-x64.zip)** ·
+**[Novo LittleTec Studio](https://github.com/thegodKoDDa/littletecstudio)** ·
+**[Web do Studio](https://thegodkodda.github.io/littletecstudio/)** ·
+[Licença ISC](LICENSE)
 
-**[Baixar LittleTec-Windows-x64.zip — Windows 64 bits](https://github.com/thegodKoDDa/littletec/releases/latest/download/LittleTec-Windows-x64.zip)** · **[Versão Web & Online (GitHub Pages)](https://github.com/thegodKoDDa/littletec-web)** · [Todas as versões](https://github.com/thegodKoDDa/littletec/releases) · [Licença ISC](LICENSE)
+## O que fica preservado
 
-[![Verificações](https://github.com/thegodKoDDa/littletec/actions/workflows/ci.yml/badge.svg)](https://github.com/thegodKoDDa/littletec/actions/workflows/ci.yml)
-[![Licença ISC](https://img.shields.io/badge/licen%C3%A7a-ISC-blue.svg)](LICENSE)
+- Nosso primeiro desktop: Python + PySide6/Qt Quick/QML + HIDAPI, Windows x64.
+- Versão **1.1.0**, com mapeamento, cores, aplicação e giratórios funcionais
+  confirmados pelo usuário em uso real.
+- Fontes, testes, documentação, histórico Git e release publicada.
+- No diretório local: `novo/dist/LittleTec.exe` e `_internal`, ambientes, capturas
+  e os 70 arquivos do programa original do fabricante em `original/`.
 
-> [!NOTE]
-> **Versão Web disponível & Aviso sobre a interface:**
-> - Uma versão web moderna, responsiva e com feedback em tempo real está disponível no projeto **[LittleTec Web](https://github.com/thegodKoDDa/littletec-web)**, podendo ser usada diretamente no navegador pelo **[GitHub Pages](https://thegodkodda.github.io/littletec-web/)** ou baixada em pacote HTML portátil.
-> - **Aviso de desenvolvimento:** A interface visual atual em PySide6/QML deste aplicativo desktop está plenamente funcional e estável, mas está sujeita a alterações futuras planejadas, com a futura migração e unificação definitiva para o design system da versão Web.
+Os originais do fabricante não são o aplicativo desenvolvido aqui. Seus binários
+continuam intactos no arquivo local e não são incluídos neste repositório público.
+Capturas, análise e ambientes também permanecem locais.
 
-## Teclado de referência compatível
+## Abrir o OG
 
-Este software foi desenvolvido, engenharia-reversa e validado especificamente para o mini teclado mecânico programável de **12 teclas + 2 botões giratórios (knobs)** com controlador **WCH CH57x**:
+No checkout local, abrir `Abrir-OG.cmd` ou `novo/Abrir-LittleTec.cmd`. O lançador
+já existente prepara a distribuição Qt no Windows. Na versão baixada, extrair o
+ZIP em uma pasta Windows e abrir `LittleTec.exe`, mantendo `_internal` ao lado.
+O Qt faz leitura automática ao abrir; essa é a operação preservada da versão.
 
-- **Link de referência do modelo utilizado (AliExpress)**: [Mini Teclado Mecânico Programável 12 Teclas + 2 Knobs RGB USB Type-C (Item 1005006437127027)](https://pt.aliexpress.com/item/1005006437127027.html)
-- **Identificação USB HID**: `VID_1189&PID_8842` (`0x1189:0x8842`, Interface `MI_00`, Usage Page `0xFF00`, Usage `0x01`, relatórios de 65 bytes com Report ID `0x03`)
-- **Controlador físico**: WCH CH57x (memória interna flash persistente para 3 camadas independentes)
-- **Layout físico**: 12 teclas mecânicas (`Tecla 01` a `Tecla 12`) + 2 encoders rotativos clicáveis (`Knob 1` e `Knob 2`, cada um com giro à esquerda `↶`, clique central `●` e giro à direita `↷`, totalizando 18 posições por camada e 54 posições nas 3 camadas)
-- **Iluminação LED nativa no chip**: 7 cores físicas fixas (`Vermelho`, `Laranja`, `Amarelo`, `Verde`, `Ciano`, `Azul`, `Roxo`) e 6 modos de efeito gravados no firmware (`Desligado`, `Estático`, `Respiração`, `Ciclo Automático`, `Onda ao Pressionar`, `Acender Tecla ao Pressionar`)
+Não é necessário instalar Python para usar o pacote pronto. O modelo USB é
+`1189:8842`, **12 teclas + 2 giratórios, variante 0**. Perfis v1/v2 e dados opacos
+continuam preservados. LED não tem readback: último envio não é leitura interna.
 
-## Recursos
-
-- **Reconhecimento direto pelo teclado principal**: clique em qualquer tecla ou posição de knob na tela e pressione a tecla ou combinação desejada no seu próprio teclado (`4`, `Ctrl+C`, `Ctrl+V`, `Ctrl+Shift+M`, `F13–F24`, etc.), com opção de auto-avançar.
-- **Painel completo para os 2 Knobs (`Knob 1` e `Knob 2`)**: visualização simultânea de `↶ Esq.`, `● Clique` e `↷ Dir.`, menu rápido `Preset ▾` com 12 perfis prontos (Volume & Mudo, Controle de Mídia, Zoom, Navegação de Abas, Linha do Tempo/Vídeo, Desfazer/Salvar/Refazer, Scroll do Mouse, Desktops Virtuais, Brilho da Tela, Navegação Vertical, Rolagem de Página e Tamanho do Pincel), inversão de sentido (`⇄ Inverter ↶/↷`), troca rápida `Giro 1 ↔ 2` e replicação nas 3 camadas.
-- **Ações rápidas em 1 clique para qualquer tecla ou giro**: atribua `Faixa anterior`, `Reproduzir/pausar`, `Próxima faixa`, `Volume +/−`, `Silenciar`, `Copiar`, `Colar`, `Recortar`, `Desfazer`, `Salvar`, `Print (Win+Shift+S)`, `Mudo Discord` ou `Calculadora` em qualquer posição.
-- **Sequências de até 20 etapas e digitação de texto/números**: crie macros de teclado com reordenação de etapas, modificadores independentes ou digite um texto/número (ex.: `1234` + `Enter`) para atribuir automaticamente.
-- **Templates prontos de camada**: preencha as 18 posições da camada ativa em 1 clique (*Produtividade & Edição*, *Multimídia, Jogos & Discord*, *Navegador & Web*, *Teclado Numérico 0–9* e *Edição de Vídeo*) ou clone uma camada para outra.
-- **Controle de iluminação LED sem complicações**: seleção direta das 7 cores físicas e 6 modos nativos do chip por camada (com envio automático em 1 clique ou aplicação simultânea nas 3 camadas).
-- **Segurança de dados e backups automáticos**: cada leitura e gravação salva uma cópia bruta verificada em `%LOCALAPPDATA%\LittleTec\captures` e confere a releitura dos registros; em caso de falha de comunicação, restaura automaticamente a configuração anterior.
-
-## Começar
-
-### Baixar e usar no Windows — recomendado
-
-1. **[Baixe o LittleTec-Windows-x64.zip](https://github.com/thegodKoDDa/littletec/releases/latest/download/LittleTec-Windows-x64.zip)**.
-2. Extraia a pasta em um diretório local (por exemplo, `C:\LittleTec\`) e abra **`LittleTec.exe`** (mantenha a pasta `_internal` ao lado do executável). Não é necessário instalar Python nem drivers especiais.
-3. Com o teclado `1189:8842` conectado via USB, o aplicativo lê automaticamente as 3 camadas ao abrir.
-
-### Executar a partir do código-fonte (Windows x64)
-
-Requisitos: **Python 3.13 (64 bits)** no Windows.
-
-```powershell
-git clone https://github.com/thegodKoDDa/littletec.git
-cd littletec\novo
-powershell -ExecutionPolicy Bypass -File tools\setup_qt_windows.ps1
-.\.venv-qt-windows\Scripts\python.exe tools\studio_qt.py
-```
-
-### Gerar seu próprio executável Windows
-
-Com o ambiente `.venv-qt-windows` preparado:
-
-```powershell
-.\.venv-qt-windows\Scripts\python.exe tools\build_qt_windows.py
-```
-
-O pacote compilado é gerado em `novo/dist/LittleTec.exe` junto da pasta `novo/dist/_internal/`.
-
-## Desenvolvimento
-
-A arquitetura separa completamente o domínio/protocolo da interface gráfica:
-
-- **Domínio e protocolo (`novo/src/littletec/`)**: codificação e decodificação pura dos registros de 50 bytes e relatórios USB HID de 65 bytes, validados contra 206 vetores reais do hardware.
-- **Interface (`novo/src/littletec/ui_qt/`)**: PySide6 / Qt Quick (QML) com operações USB serializadas em `QThread` (`device_worker.py`), mantendo a interface responsiva.
-
-Para executar a suíte de testes unitários (Linux ou Windows, sem exigir o teclado conectado):
-
-```bash
-cd novo
-python3 -m unittest discover -s tests -v
-```
+## Organização e continuidade
 
 | Diretório | Conteúdo |
 | --- | --- |
-| `novo/src/littletec/` | Protocolo USB HID (`1189:8842`), catálogo, perfis, sessão e serviços de leitura/escrita |
-| `novo/src/littletec/ui_qt/` | Controlador Qt, worker assíncrono e componentes visuais QML |
-| `novo/tests/` | 79 testes automatizados e vetores reais de protocolo (`fixtures/`) |
-| `novo/tools/` | Scripts de build Windows (`build_qt_windows.py`), diagnóstico HID e verificação |
-| `novo/docs/` | Especificação técnica do protocolo recuperado (`PROTOCOLO.md`) e integração dos encoders (`ENCODERS_INTEGRACAO.md`) |
+| `original/` | Programa do fabricante, somente no arquivo local |
+| `novo/src/` | Fontes do desktop Qt preservado |
+| `novo/dist/` | Executável Qt e dependências, somente local |
+| `novo/tests/` | Testes puros e vetores |
+| `novo/docs/` | Documentação técnica e registros históricos |
+| `novo/captures/`, `novo/analysis/` | Evidências locais preservadas |
 
-## Documentação
+A cópia Web antes existente em `web/` foi transferida para a pasta local do
+Studio, em `.local/legado/web-interno-20261029/`, incluindo suas evidências.
+Apenas caches regeneráveis foram removidos. Ela não é uma segunda base ativa.
 
-- [Guia rápido do Studio](novo/README.md)
-- [Protocolo USB HID 1189:8842](novo/docs/PROTOCOLO.md)
-- [Endereçamento e integração dos Knobs giratórios](novo/docs/ENCODERS_INTEGRACAO.md)
-- [Histórico de versões](CHANGELOG.md)
-- [Guia de contribuição](CONTRIBUTING.md)
+O diretório OG chama-se `littletec-og`; o projeto ativo está em `littletec-studio`.
+Os históricos Git e as releases anteriores foram mantidos durante a renomeação.
 
-## Licença
+Para desenvolver, relatar problemas atuais ou baixar o novo `.exe`, use o
+[LittleTec Studio](https://github.com/thegodKoDDa/littletecstudio). Este repositório
+será mantido arquivado para consulta e uso do desktop antigo.
 
-[ISC](LICENSE). Bibliotecas de terceiros (PySide6/Qt e HIDAPI) conservam suas respectivas licenças em [`novo/licenses/`](novo/licenses/).
+## Referência histórica
+
+- [README anterior completo](novo/docs/README_ANTES_OG_20261029.md).
+- [Guia do desktop Qt](novo/README.md).
+- [Protocolo recuperado](novo/docs/PROTOCOLO.md).
+- [Histórico de versões](CHANGELOG.md).
+- [Índice documental](novo/docs/README.md).
+
+A confirmação de funcionamento não é um laudo de todos os efeitos ou de
+persistência após reconexão. Testes físicos não são exigidos por rotina.

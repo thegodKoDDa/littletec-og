@@ -1,4 +1,13 @@
-# LittleTec — orientações vigentes
+# Estado do arquivo OG
+
+Por decisão do usuário em 29/10/2026, o desenvolvimento aqui está encerrado.
+O projeto ativo é `../littletec-studio`, repositório `thegodKoDDa/littletecstudio`.
+Preservar o Qt 1.1.0, executável, originais, fontes, capturas e histórico.
+A cópia Web foi transferida para o histórico local do Studio. Não recriar `web/`.
+As orientações técnicas abaixo documentam o funcionamento preservado e não
+são autorização para reiniciar desenvolvimento ou testes físicos neste arquivo.
+
+# LittleTec OG — arquivo preservado
 
 Atualizado em **29/10/2026**. Escopo: todo este diretório.
 

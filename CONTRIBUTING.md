@@ -1,3 +1,9 @@
+> **Arquivo LittleTec OG (29/10/2026):** desenvolvimento encerrado. Conteúdo
+> preservado para uso/consulta do Qt 1.1.0. O trabalho ativo segue no
+> [LittleTec Studio](https://github.com/thegodKoDDa/littletecstudio).
+> A antiga cópia Web local está no histórico do Studio; caminhos antigos abaixo
+> descrevem a organização anterior.
+
 # Contribuir
 
 Use as [issues](https://github.com/thegodKoDDa/littletec/issues) para relatar problemas ou propor melhorias. Antes de enviar uma alteração ampla no protocolo ou na interface, descreva o comportamento observado e o modelo do teclado.
